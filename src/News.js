@@ -92,8 +92,8 @@ const News = () => {
                                 <View style={styles.container}>
                                     <ImageBackground 
                                         source={{ uri: banner_item.imageUrl }} 
-                                        style={styles.image}>
-                                        
+                                        style={styles.image}
+                                    >
                                         <Text style={styles.bannerText}>{banner_item.text}</Text>
                                     </ImageBackground>
                                 </View>
@@ -117,7 +117,6 @@ const News = () => {
                 }}
                 ListHeaderComponent={listHeader}
             />
-
         </SafeAreaView>
     )
 }
@@ -147,5 +146,4 @@ const styles = StyleSheet.create({
         textAlignVertical: "center",
         paddingHorizontal: 10,
     },
-    
 })
