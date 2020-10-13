@@ -93,6 +93,7 @@ const News = () => {
                                     <ImageBackground 
                                         source={{ uri: banner_item.imageUrl }} 
                                         style={styles.image}
+                                        imageStyle={{ borderRadius: 10 }}
                                     >
                                         <Text style={styles.bannerText}>{banner_item.text}</Text>
                                     </ImageBackground>
@@ -140,10 +141,11 @@ const styles = StyleSheet.create({
     bannerText: {
         color: "white",
         fontSize: 20,
-        backgroundColor: "black",
-        opacity: 0.5,
-        height: Dimensions.get('window').height / 20,
+        backgroundColor: "#11111150",
+        height: Dimensions.get('window').height / 25,
         textAlignVertical: "center",
         paddingHorizontal: 10,
+        borderBottomLeftRadius: 10,
+        borderBottomRightRadius: 10,
     },
 })
