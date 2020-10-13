@@ -1,15 +1,6 @@
 import React from 'react';
 import { View, Image, Text, StyleSheet, Dimensions } from 'react-native';
 
-// {
-//     id: 0,
-//     author: 'Omkar Godbole',
-//     title: 'Bulls Exit BitMEX Bitcoin Futures Market',
-//     description:
-//         'Since the announcement from U.S. regulators, BitMEX has witnessed an outflow of more than 40,000 bitcoins, currently worth more than $422 million.',
-//     imageUrl:
-//         'https://static.coindesk.com/wp-content/uploads/2020/10/BitMEX-1180x628.png',
-// },
 
 const NewsCard = ({ news }) => {
     return (
