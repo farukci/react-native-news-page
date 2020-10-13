@@ -1,3 +1,6 @@
+
+// This is the new version of news app
+
 import React from 'react';
 import { SafeAreaView, View, Text, ScrollView, Image, FlatList, Dimensions, ImageBackground, StyleSheet } from 'react-native';
 
@@ -41,7 +44,7 @@ const news_data = [
         description:
             'Shares of Twilio extended its gains into Friday, reaching a 52-week high, after the company said in a filing that it expects better-than-expected third-quarter revenue.',
         imageUrl:
-            'https://image.cnbcfm.com/api/v1/image/105737636-1550147305726gettyimages-1034802076rr.jpg?v=1601647142',
+            'https://www.newszada.com/wp-content/uploads/2020/10/Stocks-making-the-biggest-moves-premarket-Twilio-Apple-AstraZeneca-Levi-scaled.jpg',
     },
 ];
 const banner_data = [

@@ -1,4 +1,6 @@
 
+// This is the old version of news app
+
 import React from 'react';
 import {
   SafeAreaView,
