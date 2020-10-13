@@ -1,3 +1,3 @@
 React Native News Page Project
 
-![screengif](./newsPage.gif)
+<img src="./newsPage.gif" alt="newsPage" height=1000 align="center">
