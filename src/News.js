@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView, View, Text, ScrollView, Image, FlatList, Dimensions } from 'react-native';
+import { SafeAreaView, View, Text, ScrollView, Image, FlatList, Dimensions, ImageBackground, StyleSheet } from 'react-native';
 
 import NewsCard from './components/NewsCard'
 
@@ -89,17 +89,13 @@ const News = () => {
                     {
                         banner_data.map(banner_item => {
                             return (
-                                <View>
-                                    <Image
-                                        source={{ uri: banner_item.imageUrl }}
-                                        style={{
-                                            width: Dimensions.get('window').width * 0.90,
-                                            height: Dimensions.get('window').height / 4,
-                                            margin: 5,
-                                            borderRadius: 10
-                                        }}
-                                    />
-                                    <Text>{banner_item.text}</Text>
+                                <View style={styles.container}>
+                                    <ImageBackground 
+                                        source={{ uri: banner_item.imageUrl }} 
+                                        style={styles.image}>
+                                        
+                                        <Text style={styles.bannerText}>{banner_item.text}</Text>
+                                    </ImageBackground>
                                 </View>
                             )
                         })
@@ -127,3 +123,29 @@ const News = () => {
 }
 
 export default News
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        flexDirection: "column",
+    },
+    image: {
+        width: Dimensions.get('window').width * 0.90,
+        height: Dimensions.get('window').height / 4,
+        margin: 5,
+        borderRadius: 10,
+        flex: 1,
+        resizeMode: "cover",
+        justifyContent: "flex-end",
+    },
+    bannerText: {
+        color: "white",
+        fontSize: 20,
+        backgroundColor: "black",
+        opacity: 0.5,
+        height: Dimensions.get('window').height / 20,
+        textAlignVertical: "center",
+        paddingHorizontal: 10,
+    },
+    
+})
